@@ -4,6 +4,7 @@ export interface NFTConfig {
   name: string;
   collection: string;
   description: string;
+  interpretation: string;
   image: string;
   marketplaceUrl: string;
   contractAddress?: string;
@@ -17,8 +18,9 @@ export const myNFTs: NFTConfig[] = [
     name: 'Popkins',
     collection: 'Popkins',
     description: 'Playful on-chain characters from the Sui ecosystem.',
+    interpretation: 'Curiosity-first identity.',
     image: '/assets/popkins.png',
-    marketplaceUrl: 'https://www.tradeport.xyz/sui/0x239330c441a39608053d5f3bd3b2550cd7b873b350ae69112b360ad47bcaaff?tab=items&tokenId=0x27ec16e8d7b2fb8c55a22a78ad376a2d93d450652c9e14c8ded652f31c952e3d&modalSlug=0xb908f3c6fea6865d32e2048c520cdfe3b5c5bbcebb658117c41bad70f52b7ccc%3A%3Apopkins_nft%3A%3APopkins',
+    marketplaceUrl: '', // Removed marketplace links
     contractAddress: '0x239330c441a39608053d5f3bd3b2550cd7b873b350ae69112b360ad47bcaaff',
     tokenId: '0x27ec16e8d7b2fb8c55a22a78ad376a2d93d450652c9e14c8ded652f31c952e3d',
     blockchain: 'sui'
@@ -27,9 +29,10 @@ export const myNFTs: NFTConfig[] = [
     id: '2',
     name: 'Fwogs',
     collection: 'Fwogs',
-    description: 'A stylized PFP series rooted in internet culture and identity.',
+    description: 'Internet-native PFPs rooted in culture and remix.',
+    interpretation: 'Memetic, informal, human.',
     image: '/assets/solana-nft.png',
-    marketplaceUrl: 'https://opensea.io/item/ethereum/0x8fe1a377b83921fe1429adb1b8fbfecd45de9cd8/1175',
+    marketplaceUrl: '', // Removed marketplace links
     contractAddress: '0x8fe1a377b83921fe1429adb1b8fbfecd45de9cd8',
     tokenId: '1175',
     blockchain: 'ethereum'
@@ -39,8 +42,9 @@ export const myNFTs: NFTConfig[] = [
     name: 'Pythenians',
     collection: 'Pythenians',
     description: 'Network-native artifacts from the Pyth community.',
+    interpretation: 'Aligned with data infrastructure.',
     image: '/assets/ethereum-nft.png',
-    marketplaceUrl: 'https://magiceden.io/item-details/EZfS8jZwbPSrwyEyoMHxZfHzrTHcpsWDQVr8tLgdFYKT',
+    marketplaceUrl: '', // Removed marketplace links
     contractAddress: 'EZfS8jZwbPSrwyEyoMHxZfHzrTHcpsWDQVr8tLgdFYKT',
     tokenId: 'EZfS8jZwbPSrwyEyoMHxZfHzrTHcpsWDQVr8tLgdFYKT',
     blockchain: 'solana'
