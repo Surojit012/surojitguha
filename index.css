@@ -12,6 +12,11 @@ section[id] {
 /* App card title styling - ensure single line at all times */
 .app-title {
   white-space: nowrap;
+  overflow: visible;
+}
+
+.app-card {
+  min-width: 0;
 }
 
 /* Responsive improvements */
