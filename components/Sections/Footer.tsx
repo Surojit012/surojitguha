@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           
           {/* Left Section - Name & Description */}
-          <div className="md:col-span-5 space-y-4">
+          <div className="md:col-span-4 space-y-4">
             <h3 className="text-white font-medium text-base">Surojit Guha</h3>
             <p className="text-secondary/60 text-sm font-light leading-relaxed max-w-md">
               Collaborating on thoughtful infrastructure and experimental tools.
@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Middle Section - Navigation */}
-          <div className="md:col-span-3 space-y-3">
+          <div className="md:col-span-4 space-y-3">
             <h4 className="text-xs font-mono text-secondary/40 tracking-widest uppercase mb-4">Navigate</h4>
             <div className="space-y-2">
               <a href="#work" className="block text-sm text-secondary/70 hover:text-white transition-colors">
