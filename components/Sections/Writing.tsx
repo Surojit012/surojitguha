@@ -10,7 +10,7 @@ const curatedContent: WritingPiece[] = [
     description: 'Frontend usability as infrastructure risk.',
     category: 'Thread',
     tags: ['Infrastructure', 'UX'],
-    link: 'https://twitter.com/surojitpvt'
+    link: 'https://x.com/surojitpvt/status/2013108250917425252?s=20'
   },
   {
     id: '2',
@@ -18,7 +18,7 @@ const curatedContent: WritingPiece[] = [
     description: 'Software as furniture: quiet, reliable, present.',
     category: 'Note',
     tags: ['Philosophy', 'Design'],
-    link: 'https://twitter.com/surojitpvt'
+    link: 'https://x.com/surojitpvt/status/2013115540173205902?s=20'
   },
   {
     id: '3',
@@ -39,36 +39,39 @@ const curatedContent: WritingPiece[] = [
 ];
 
 const WritingCard: React.FC<{ piece: WritingPiece; index: number }> = ({ piece, index }) => (
-  <motion.a
-    href={piece.link}
-    target="_blank"
-    rel="noopener noreferrer"
+  <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-50px" }}
     transition={{ duration: 0.8, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
-    className="group relative flex flex-col justify-between p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.02)] transition-all duration-700 min-h-[200px]"
   >
-    <div>
-      <div className="flex justify-between items-start mb-6">
-        <span className="text-[10px] font-mono uppercase tracking-widest text-secondary/60 border border-white/5 px-2 py-1 rounded-sm group-hover:border-white/20 transition-colors">
-          {piece.category}
-        </span>
-        <ArrowUpRight 
-          size={16} 
-          className="text-secondary/40 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500" 
-        />
-      </div>
+    <a
+      href={piece.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative flex flex-col justify-between p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.02)] transition-all duration-700 min-h-[200px] block"
+    >
+      <div>
+        <div className="flex justify-between items-start mb-6">
+          <span className="text-[10px] font-mono uppercase tracking-widest text-secondary/60 border border-white/5 px-2 py-1 rounded-sm group-hover:border-white/20 transition-colors">
+            {piece.category}
+          </span>
+          <ArrowUpRight 
+            size={16} 
+            className="text-secondary/40 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500" 
+          />
+        </div>
 
-      <h3 className="text-xl font-medium text-primary/90 group-hover:text-white mb-4 transition-colors duration-500 leading-tight">
-        {piece.title}
-      </h3>
-      
-      <p className="text-sm text-secondary font-light leading-relaxed max-w-[95%]">
-        {piece.description}
-      </p>
-    </div>
-  </motion.a>
+        <h3 className="text-xl font-medium text-primary/90 group-hover:text-white mb-4 transition-colors duration-500 leading-tight">
+          {piece.title}
+        </h3>
+        
+        <p className="text-sm text-secondary font-light leading-relaxed max-w-[95%]">
+          {piece.description}
+        </p>
+      </div>
+    </a>
+  </motion.div>
 );
 
 export const Writing: React.FC = () => {
@@ -79,18 +82,19 @@ export const Writing: React.FC = () => {
         whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
         viewport={{ once: true, margin: "-10%" }}
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-        className="mb-16 max-w-xl"
       >
-        <div className="flex items-center gap-3 mb-4 text-secondary/50">
-             <Feather size={14} />
-             <span className="text-xs font-mono tracking-widest uppercase">
-              03 / Selected Writing
-            </span>
-          </div>
-          <p className="text-secondary font-light leading-relaxed">
-            Public thinking.<br/>
-            Only pieces that endure.
-          </p>
+        <div className="mb-16 max-w-xl">
+          <div className="flex items-center gap-3 mb-4 text-secondary/50">
+               <Feather size={14} />
+               <span className="text-xs font-mono tracking-widest uppercase">
+                03 / Selected Writing
+              </span>
+            </div>
+            <p className="text-secondary font-light leading-relaxed">
+              Public thinking.<br/>
+              Only pieces that endure.
+            </p>
+        </div>
       </motion.div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5 border border-white/5">
@@ -104,16 +108,17 @@ export const Writing: React.FC = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 1 }}
-        className="mt-12 text-right"
       >
-        <a 
-          href="https://twitter.com/surojitpvt" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block text-xs font-mono text-secondary/50 hover:text-white transition-colors tracking-widest uppercase border-b border-transparent hover:border-white/20 pb-1"
-        >
-          More writing on X →
-        </a>
+        <div className="mt-12 text-right">
+          <a 
+            href="https://twitter.com/surojitpvt" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-xs font-mono text-secondary/50 hover:text-white transition-colors tracking-widest uppercase border-b border-transparent hover:border-white/20 pb-1"
+          >
+            More writing on X →
+          </a>
+        </div>
       </motion.div>
     </section>
   );
