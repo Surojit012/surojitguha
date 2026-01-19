@@ -31,8 +31,13 @@ const SignalCard: React.FC<{ signal: typeof myNFTs[0]; index: number }> = ({ sig
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           style={{ imageRendering: 'auto' }}
           onError={(e) => {
-            // Fallback for broken images
-            (e.target as HTMLImageElement).src = '/assets/nft-placeholder.svg';
+            // Fallback to SVG placeholder if PNG doesn't exist
+            const target = e.target as HTMLImageElement;
+            if (target.src.includes('.png')) {
+              target.src = target.src.replace('.png', '.svg');
+            } else {
+              target.src = '/assets/nft-placeholder.svg';
+            }
           }}
         />
         
