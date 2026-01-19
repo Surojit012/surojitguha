@@ -82,9 +82,7 @@ const Card: React.FC<{ item: WorkItem; index: number; isWriting?: boolean }> = (
         </span>
       )}
       <div className="flex justify-between items-center mb-3">
-        <h3 className="app-card-title font-medium text-white group-hover:text-primary transition-colors leading-tight" style={{
-          fontSize: 'clamp(0.875rem, 2vw, 1rem)'
-        }}>
+        <h3 className="app-title font-medium text-white group-hover:text-primary transition-colors">
           {item.title}
         </h3>
         <ArrowUpRight 

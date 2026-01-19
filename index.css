@@ -10,21 +10,8 @@ section[id] {
 }
 
 /* App card title styling - ensure single line at all times */
-.app-card-title {
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  line-height: 1.2 !important;
-  max-width: calc(100% - 2rem) !important;
-}
-
-.app-card-title:hover,
-.app-card-title:focus,
-.app-card-title:active {
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  line-height: 1.2 !important;
+.app-title {
+  white-space: nowrap;
 }
 
 /* Responsive improvements */
