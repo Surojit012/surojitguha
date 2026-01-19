@@ -47,7 +47,7 @@ const SignalCard: React.FC<{ signal: typeof myNFTs[0]; index: number }> = ({ sig
 
 export const Signals: React.FC = () => {
   return (
-    <section className="py-24 border-t border-white/5">
+    <section id="signals" className="py-24 border-t border-white/5">
       <motion.div 
         initial={{ opacity: 0, y: 20, filter: 'blur(8px)' }}
         whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}

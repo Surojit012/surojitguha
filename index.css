@@ -1,2 +1,10 @@
 /* Additional styles for the app */
-/* This file is referenced in index.html but can be empty if all styles are inline */
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset scroll position to account for any fixed headers */
+section[id] {
+  scroll-margin-top: 2rem;
+}

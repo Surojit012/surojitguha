@@ -19,9 +19,9 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-3 space-y-3">
             <h4 className="text-xs font-mono text-secondary/40 tracking-widest uppercase mb-4">Navigate</h4>
             <div className="space-y-2">
-              <Link href="/" className="block text-sm text-secondary/70 hover:text-white transition-colors cursor-pointer">
+              <a href="#work" className="block text-sm text-secondary/70 hover:text-white transition-colors">
                 Work
-              </Link>
+              </a>
               <Link href="/context" className="block text-sm text-secondary/70 hover:text-white transition-colors cursor-pointer">
                 Context
               </Link>
