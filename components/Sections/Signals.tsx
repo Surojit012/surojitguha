@@ -103,7 +103,7 @@ export const Signals: React.FC = () => {
         </p>
       </motion.div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
         {myNFTs.map((s, i) => (
           <SignalCard key={s.id} signal={s} index={i} />
         ))}
