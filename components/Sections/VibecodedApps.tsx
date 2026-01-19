@@ -41,7 +41,7 @@ const AppCard: React.FC<{ app: VibecodedApp; index: number }> = ({ app, index })
     >
       <div className="flex justify-between items-start mb-4">
         <div className="flex items-center gap-2">
-           <h3 className="text-xl font-medium text-white group-hover:text-glow transition-colors duration-500 break-words max-w-[80%]">
+           <h3 className="text-xl font-medium text-white group-hover:text-glow transition-colors duration-500 whitespace-nowrap">
             {app.name}
           </h3>
           <span className="hidden group-hover:inline-flex opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[9px] font-mono uppercase tracking-widest text-glow border border-glow/20 px-1.5 py-0.5 rounded-[2px]">
