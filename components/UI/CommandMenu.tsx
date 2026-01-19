@@ -117,7 +117,7 @@ export const CommandMenu: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[100] flex items-start justify-center pt-[20vh] px-4"
+          className="fixed inset-0 z-[100] flex items-start justify-center pt-[15vh] sm:pt-[20vh] px-4 sm:px-6"
         >
           {/* Backdrop */}
           <div 
@@ -131,26 +131,27 @@ export const CommandMenu: React.FC = () => {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="relative w-full max-w-lg bg-[#0f0f11] border border-white/10 shadow-2xl shadow-black/50 overflow-hidden rounded-sm"
+            className="relative w-full max-w-sm sm:max-w-lg bg-[#0f0f11] border border-white/10 shadow-2xl shadow-black/50 overflow-hidden rounded-sm"
           >
             {/* Search Bar */}
-            <div className="flex items-center px-4 py-4 border-b border-white/5">
-              <Search size={16} className="text-secondary/50 mr-3" />
+            <div className="flex items-center px-3 sm:px-4 py-3 sm:py-4 border-b border-white/5">
+              <Search size={14} className="sm:hidden text-secondary/50 mr-2 sm:mr-3" />
+              <Search size={16} className="hidden sm:block text-secondary/50 mr-2 sm:mr-3" />
               <input
                 ref={inputRef}
                 type="text"
                 placeholder="Type a command or search..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="w-full bg-transparent text-white font-mono text-sm focus:outline-none placeholder:text-secondary/30"
+                className="w-full bg-transparent text-white font-mono text-xs sm:text-sm focus:outline-none placeholder:text-secondary/30"
               />
-              <span className="text-[10px] font-mono text-secondary/30 border border-white/10 px-1.5 py-0.5 rounded">ESC</span>
+              <span className="text-[9px] sm:text-[10px] font-mono text-secondary/30 border border-white/10 px-1 sm:px-1.5 py-0.5 rounded">ESC</span>
             </div>
 
             {/* List */}
-            <div className="max-h-[300px] overflow-y-auto py-2">
+            <div className="max-h-[250px] sm:max-h-[300px] overflow-y-auto py-2">
               {filteredItems.length === 0 ? (
-                <div className="px-4 py-8 text-center text-xs font-mono text-secondary/40">
+                <div className="px-3 sm:px-4 py-6 sm:py-8 text-center text-[10px] sm:text-xs font-mono text-secondary/40">
                   No results found.
                 </div>
               ) : (
@@ -159,27 +160,27 @@ export const CommandMenu: React.FC = () => {
                     key={item.id}
                     onClick={() => item.action()}
                     onMouseEnter={() => setSelectedIndex(index)}
-                    className={`px-4 py-3 flex items-center justify-between cursor-pointer transition-colors ${
+                    className={`px-3 sm:px-4 py-2.5 sm:py-3 flex items-center justify-between cursor-pointer transition-colors ${
                       index === selectedIndex ? 'bg-white/[0.04]' : 'transparent'
                     }`}
                   >
-                    <div className="flex items-center gap-3">
-                      <div className={`p-1.5 rounded ${index === selectedIndex ? 'text-white' : 'text-secondary/40'}`}>
+                    <div className="flex items-center gap-2 sm:gap-3">
+                      <div className={`p-1 sm:p-1.5 rounded ${index === selectedIndex ? 'text-white' : 'text-secondary/40'}`}>
                         {item.icon}
                       </div>
                       <div className="flex flex-col">
-                        <span className={`text-sm font-light ${index === selectedIndex ? 'text-white' : 'text-secondary'}`}>
+                        <span className={`text-xs sm:text-sm font-light ${index === selectedIndex ? 'text-white' : 'text-secondary'}`}>
                           {item.label}
                         </span>
                         {item.category && (
-                          <span className="text-[10px] font-mono text-secondary/40 uppercase tracking-wider">
+                          <span className="text-[9px] sm:text-[10px] font-mono text-secondary/40 uppercase tracking-wider">
                             {item.category}
                           </span>
                         )}
                       </div>
                     </div>
                     {item.shortcut && (
-                      <span className="text-[10px] font-mono text-secondary/30 border border-white/10 px-1.5 py-0.5 rounded">
+                      <span className="text-[9px] sm:text-[10px] font-mono text-secondary/30 border border-white/10 px-1 sm:px-1.5 py-0.5 rounded">
                         {item.shortcut}
                       </span>
                     )}
@@ -189,13 +190,13 @@ export const CommandMenu: React.FC = () => {
             </div>
 
             {/* Footer */}
-            <div className="px-4 py-2 bg-white/[0.02] border-t border-white/5 flex justify-between items-center">
-               <span className="text-[10px] font-mono text-secondary/30">
+            <div className="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/[0.02] border-t border-white/5 flex justify-between items-center">
+               <span className="text-[9px] sm:text-[10px] font-mono text-secondary/30">
                  PROTCOL INTERFACE v1.0
                </span>
-               <div className="flex gap-2">
-                 <span className="text-[10px] font-mono text-secondary/30">Select</span>
-                 <span className="text-[10px] font-mono text-secondary/30">↵</span>
+               <div className="flex gap-1 sm:gap-2">
+                 <span className="text-[9px] sm:text-[10px] font-mono text-secondary/30">Select</span>
+                 <span className="text-[9px] sm:text-[10px] font-mono text-secondary/30">↵</span>
                </div>
             </div>
           </motion.div>
