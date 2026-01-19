@@ -68,32 +68,33 @@ const Card: React.FC<{ item: WorkItem; index: number; isWriting?: boolean }> = (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, delay: index * 0.1 }}
-    className="group h-full app-card"
   >
-    <a
-      href={item.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex flex-col p-6 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 h-full"
-    >
-      {item.type && (
-        <span className="mb-3 text-[10px] font-mono text-secondary/40 uppercase tracking-widest group-hover:text-secondary/60 transition-colors">
-          {item.type}
-        </span>
-      )}
-      <div className="flex justify-between items-start mb-3">
-        <h3 className="app-title font-medium text-white group-hover:text-primary transition-colors">
-          {item.title}
-        </h3>
-        <ArrowUpRight 
-          size={14} 
-          className="text-secondary/30 group-hover:text-white transition-colors transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 shrink-0 ml-3" 
-        />
-      </div>
-      <p className="text-sm text-secondary font-light leading-relaxed mt-auto">
-        {item.description}
-      </p>
-    </a>
+    <div className="group h-full app-card">
+      <a
+        href={item.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex flex-col p-6 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 h-full"
+      >
+        {item.type && (
+          <span className="mb-3 text-[10px] font-mono text-secondary/40 uppercase tracking-widest group-hover:text-secondary/60 transition-colors">
+            {item.type}
+          </span>
+        )}
+        <div className="flex justify-between items-start mb-3">
+          <h3 className="app-title font-medium text-white group-hover:text-primary transition-colors">
+            {item.title}
+          </h3>
+          <ArrowUpRight 
+            size={14} 
+            className="text-secondary/30 group-hover:text-white transition-colors transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 shrink-0 ml-3" 
+          />
+        </div>
+        <p className="text-sm text-secondary font-light leading-relaxed mt-auto">
+          {item.description}
+        </p>
+      </a>
+    </div>
   </motion.div>
 );
 
