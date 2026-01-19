@@ -37,14 +37,14 @@ const writing: WorkItem[] = [
     title: 'The Interface is the Protocol',
     description: 'Frontend usability as infrastructure risk.',
     type: 'Thread',
-    link: 'https://twitter.com/surojitpvt'
+    link: 'https://x.com/surojitpvt/status/2013108250917425252'
   },
   {
     id: 'gentle-computing',
     title: 'Gentle Computing',
     description: 'Software as furniture: quiet, reliable, present.',
     type: 'Note',
-    link: 'https://twitter.com/surojitpvt'
+    link: 'https://x.com/surojitpvt/status/2013115540173205902'
   },
   {
     id: 'identity-dark-forest',
