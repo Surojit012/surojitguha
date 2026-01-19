@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Your NFT Images</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #0b0b0d;
+            color: #f2f2f2;
+            line-height: 1.6;
+        }
+        .nft-card {
+            border: 1px solid #2a2a2e;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            background: #121214;
+        }
+        .nft-title {
+            color: #4ff0b7;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .marketplace-link {
+            display: inline-block;
+            background: #4ff0b7;
+            color: #0b0b0d;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .marketplace-link:hover {
+            background: #3dd49a;
+        }
+        .instructions {
+            background: #1a1a2e;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 4px solid #4ff0b7;
+        }
+        .filename {
+            background: #2a2a2e;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #4ff0b7;
+        }
+        h1 {
+            color: #4ff0b7;
+            text-align: center;
+        }
+        .step {
+            margin: 20px 0;
+        }
+        .step-number {
+            background: #4ff0b7;
+            color: #0b0b0d;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🖼️ Download Your NFT Images</h1>
+    
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>Click each marketplace link below</strong>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>Right-click the NFT image → "Save image as..."</strong>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">3</span>
+        <strong>Save with the exact filename shown</strong>
+    </div>
+
+    <div class="nft-card">
+        <div class="nft-title">🟦 Popkins (Sui Blockchain)</div>
+        <a href="https://www.tradeport.xyz/sui/0x239330c441a39608053d5f3bd3b2550cd7b873b350ae69112b360ad47bcaaff?tab=items&tokenId=0x27ec16e8d7b2fb8c55a22a78ad376a2d93d450652c9e14c8ded652f31c952e3d&modalSlug=0xb908f3c6fea6865d32e2048c520cdfe3b5c5bbcebb658117c41bad70f52b7ccc%3A%3Apopkins_nft%3A%3APopkins" 
+           target="_blank" 
+           class="marketplace-link">
+            Open on Tradeport →
+        </a>
+        <div class="instructions">
+            <strong>Save as:</strong> <span class="filename">popkins.png</span><br>
+            <strong>Location:</strong> public/assets/popkins.png
+        </div>
+    </div>
+
+    <div class="nft-card">
+        <div class="nft-title">🟣 Solana NFT (Magic Eden)</div>
+        <a href="https://magiceden.io/item-details/EZfS8jZwbPSrwyEyoMHxZfHzrTHcpsWDQVr8tLgdFYKT" 
+           target="_blank" 
+           class="marketplace-link">
+            Open on Magic Eden →
+        </a>
+        <div class="instructions">
+            <strong>Save as:</strong> <span class="filename">solana-nft.png</span><br>
+            <strong>Location:</strong> public/assets/solana-nft.png
+        </div>
+    </div>
+
+    <div class="nft-card">
+        <div class="nft-title">🔵 Ethereum NFT #1175 (OpenSea)</div>
+        <a href="https://opensea.io/item/ethereum/0x8fe1a377b83921fe1429adb1b8fbfecd45de9cd8/1175" 
+           target="_blank" 
+           class="marketplace-link">
+            Open on OpenSea →
+        </a>
+        <div class="instructions">
+            <strong>Save as:</strong> <span class="filename">ethereum-nft.png</span><br>
+            <strong>Location:</strong> public/assets/ethereum-nft.png
+        </div>
+    </div>
+
+    <div class="step" style="margin-top: 40px; padding: 20px; background: #1a1a2e; border-radius: 8px;">
+        <h3 style="color: #4ff0b7; margin-top: 0;">🚀 After downloading all images:</h3>
+        <pre style="background: #0b0b0d; padding: 15px; border-radius: 4px; overflow-x: auto;">git add public/assets/
+git commit -m "Add real NFT images"
+git push origin main</pre>
+        <p>Your real NFTs will immediately replace the placeholders on your live site!</p>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; color: #666;">
+        <p>Having trouble? Check the browser console for any download scripts or contact support.</p>
+    </div>
+</body>
+</html>

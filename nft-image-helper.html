@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Image Helper</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #0b0b0d;
+            color: #f2f2f2;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .marketplace-section {
+            background: #121214;
+            border: 1px solid #2a2a2e;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .nft-title {
+            color: #4ff0b7;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .marketplace-link {
+            display: block;
+            background: #4ff0b7;
+            color: #0b0b0d;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        .marketplace-link:hover {
+            background: #3dd49a;
+        }
+        .drop-zone {
+            border: 2px dashed #4ff0b7;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 15px 0;
+            background: #1a1a2e;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .drop-zone:hover {
+            background: #2a2a3e;
+            border-color: #3dd49a;
+        }
+        .drop-zone.dragover {
+            background: #2a2a3e;
+            border-color: #3dd49a;
+            transform: scale(1.02);
+        }
+        .filename {
+            background: #2a2a2e;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #4ff0b7;
+            font-size: 14px;
+        }
+        .preview-img {
+            max-width: 100%;
+            max-height: 200px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .success {
+            color: #4ff0b7;
+            font-weight: bold;
+        }
+        .instructions {
+            background: #1a1a2e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4ff0b7;
+        }
+        h1 {
+            color: #4ff0b7;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #a1a1aa;
+            margin-bottom: 30px;
+        }
+        .download-all {
+            background: #2a2a2e;
+            border: 1px solid #4ff0b7;
+            color: #4ff0b7;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .download-all:hover {
+            background: #4ff0b7;
+            color: #0b0b0d;
+        }
+    </style>
+</head>
+<body>
+    <h1>🖼️ NFT Image Helper</h1>
+    <p class="subtitle">Get your real NFT images to replace the placeholders</p>
+    
+    <div class="instructions">
+        <h3>📋 Instructions:</h3>
+        <ol>
+            <li><strong>Click marketplace links</strong> to open your NFTs</li>
+            <li><strong>Right-click the NFT image</strong> → "Save image as..."</li>
+            <li><strong>Drag & drop</strong> the saved image into the corresponding box below</li>
+            <li><strong>Download all</strong> when ready</li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <!-- Popkins -->
+        <div class="marketplace-section">
+            <div class="nft-title">🟦 Popkins (Sui)</div>
+            <a href="https://www.tradeport.xyz/sui/0x239330c441a39608053d5f3bd3b2550cd7b873b350ae69112b360ad47bcaaff?tab=items&tokenId=0x27ec16e8d7b2fb8c55a22a78ad376a2d93d450652c9e14c8ded652f31c952e3d&modalSlug=0xb908f3c6fea6865d32e2048c520cdfe3b5c5bbcebb658117c41bad70f52b7ccc%3A%3Apopkins_nft%3A%3APopkins" 
+               target="_blank" 
+               class="marketplace-link">
+                Open on Tradeport →
+            </a>
+            <div class="drop-zone" data-filename="popkins.png">
+                <div>📁 Drop Popkins image here</div>
+                <div style="margin-top: 10px;">
+                    Save as: <span class="filename">popkins.png</span>
+                </div>
+            </div>
+            <input type="file" id="popkins-input" accept="image/*" style="display: none;">
+        </div>
+
+        <!-- Solana NFT -->
+        <div class="marketplace-section">
+            <div class="nft-title">🟣 Solana NFT</div>
+            <a href="https://magiceden.io/item-details/EZfS8jZwbPSrwyEyoMHxZfHzrTHcpsWDQVr8tLgdFYKT" 
+               target="_blank" 
+               class="marketplace-link">
+                Open on Magic Eden →
+            </a>
+            <div class="drop-zone" data-filename="solana-nft.png">
+                <div>📁 Drop Solana NFT image here</div>
+                <div style="margin-top: 10px;">
+                    Save as: <span class="filename">solana-nft.png</span>
+                </div>
+            </div>
+            <input type="file" id="solana-input" accept="image/*" style="display: none;">
+        </div>
+
+        <!-- Ethereum NFT -->
+        <div class="marketplace-section">
+            <div class="nft-title">🔵 Ethereum NFT #1175</div>
+            <a href="https://opensea.io/item/ethereum/0x8fe1a377b83921fe1429adb1b8fbfecd45de9cd8/1175" 
+               target="_blank" 
+               class="marketplace-link">
+                Open on OpenSea →
+            </a>
+            <div class="drop-zone" data-filename="ethereum-nft.png">
+                <div>📁 Drop Ethereum NFT image here</div>
+                <div style="margin-top: 10px;">
+                    Save as: <span class="filename">ethereum-nft.png</span>
+                </div>
+            </div>
+            <input type="file" id="ethereum-input" accept="image/*" style="display: none;">
+        </div>
+
+        <!-- Instructions -->
+        <div class="marketplace-section">
+            <div class="nft-title">🚀 Final Step</div>
+            <button class="download-all" onclick="downloadAllImages()">
+                📦 Download All Images
+            </button>
+            <div style="margin-top: 15px; font-size: 14px; color: #a1a1aa;">
+                This will download all images with the correct filenames. 
+                Then just drag them into your <span class="filename">public/assets/</span> folder!
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const images = {};
+        
+        // Setup drag and drop for each zone
+        document.querySelectorAll('.drop-zone').forEach(zone => {
+            const filename = zone.dataset.filename;
+            
+            zone.addEventListener('click', () => {
+                const input = document.createElement('input');
+                input.type = 'file';
+                input.accept = 'image/*';
+                input.onchange = (e) => handleFile(e.target.files[0], zone, filename);
+                input.click();
+            });
+            
+            zone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                zone.classList.add('dragover');
+            });
+            
+            zone.addEventListener('dragleave', () => {
+                zone.classList.remove('dragover');
+            });
+            
+            zone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                zone.classList.remove('dragover');
+                const file = e.dataTransfer.files[0];
+                if (file && file.type.startsWith('image/')) {
+                    handleFile(file, zone, filename);
+                }
+            });
+        });
+        
+        function handleFile(file, zone, filename) {
+            images[filename] = file;
+            
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                zone.innerHTML = `
+                    <img src="${e.target.result}" class="preview-img" alt="Preview">
+                    <div class="success">✅ ${filename} ready!</div>
+                `;
+            };
+            reader.readAsDataURL(file);
+        }
+        
+        function downloadAllImages() {
+            const filenames = ['popkins.png', 'solana-nft.png', 'ethereum-nft.png'];
+            let downloadedCount = 0;
+            
+            filenames.forEach(filename => {
+                if (images[filename]) {
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(images[filename]);
+                    link.download = filename;
+                    link.click();
+                    downloadedCount++;
+                }
+            });
+            
+            if (downloadedCount > 0) {
+                alert(`✅ Downloaded ${downloadedCount} images!\n\nNext steps:\n1. Move them to public/assets/ folder\n2. Run: git add . && git commit -m "Add real NFT images" && git push`);
+            } else {
+                alert('⚠️ Please add some images first by dragging them into the boxes above.');
+            }
+        }
+    </script>
+</body>
+</html>
