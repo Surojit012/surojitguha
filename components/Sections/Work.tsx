@@ -74,24 +74,26 @@ const Card: React.FC<{ item: WorkItem; index: number; isWriting?: boolean }> = (
       href={item.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col p-3 sm:p-4 md:p-5 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 h-full"
+      className="flex flex-col p-4 sm:p-5 md:p-6 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 h-full"
     >
       {item.type && (
         <span className="mb-3 text-[9px] sm:text-[10px] font-mono text-secondary/40 uppercase tracking-widest group-hover:text-secondary/60 transition-colors">
           {item.type}
         </span>
       )}
-      <div className="flex justify-between items-start mb-3">
-        <h3 className="text-xs sm:text-sm md:text-base font-medium text-white group-hover:text-primary transition-colors flex-1 min-w-0 whitespace-nowrap overflow-hidden text-ellipsis pr-2">
+      <div className="flex justify-between items-center mb-3">
+        <h3 className="app-card-title font-medium text-white group-hover:text-primary transition-colors leading-tight" style={{
+          fontSize: 'clamp(0.875rem, 2vw, 1rem)'
+        }}>
           {item.title}
         </h3>
         <ArrowUpRight 
           size={12} 
-          className="sm:hidden text-secondary/30 group-hover:text-white transition-colors transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 shrink-0 ml-1" 
+          className="sm:hidden text-secondary/30 group-hover:text-white transition-colors transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 shrink-0 ml-2" 
         />
         <ArrowUpRight 
           size={14} 
-          className="hidden sm:block text-secondary/30 group-hover:text-white transition-colors transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 shrink-0 ml-1" 
+          className="hidden sm:block text-secondary/30 group-hover:text-white transition-colors transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 shrink-0 ml-2" 
         />
       </div>
       <p className="text-xs sm:text-sm text-secondary font-light leading-relaxed mt-auto">
@@ -114,7 +116,7 @@ export const Work: React.FC = () => {
             Applications built through fast iteration and AI-assisted workflows. Shipped early. Refined selectively.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
           {apps.map((app, i) => (
             <Card key={app.id} item={app} index={i} />
           ))}
