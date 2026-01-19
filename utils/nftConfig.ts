@@ -17,7 +17,7 @@ export const myNFTs: NFTConfig[] = [
     name: 'Popkins',
     collection: 'Popkins NFT',
     description: 'Playful on-chain characters from the Sui ecosystem.',
-    image: '/assets/popkins.png', // Add your real Popkins image here
+    image: '/assets/popkins.png',
     marketplaceUrl: 'https://www.tradeport.xyz/sui/0x239330c441a39608053d5f3bd3b2550cd7b873b350ae69112b360ad47bcaaff?tab=items&tokenId=0x27ec16e8d7b2fb8c55a22a78ad376a2d93d450652c9e14c8ded652f31c952e3d&modalSlug=0xb908f3c6fea6865d32e2048c520cdfe3b5c5bbcebb658117c41bad70f52b7ccc%3A%3Apopkins_nft%3A%3APopkins',
     contractAddress: '0x239330c441a39608053d5f3bd3b2550cd7b873b350ae69112b360ad47bcaaff',
     tokenId: '0x27ec16e8d7b2fb8c55a22a78ad376a2d93d450652c9e14c8ded652f31c952e3d',
@@ -25,10 +25,10 @@ export const myNFTs: NFTConfig[] = [
   },
   {
     id: '2',
-    name: 'Solana NFT',
-    collection: 'Magic Eden Collection',
-    description: 'A meaningful piece from the Solana ecosystem.',
-    image: '/assets/solana-nft.png', // Add your real Solana NFT image here
+    name: 'Fwogs',
+    collection: 'Fwogs',
+    description: 'A stylized PFP series rooted in internet culture and identity.',
+    image: '/assets/solana-nft.png',
     marketplaceUrl: 'https://magiceden.io/item-details/EZfS8jZwbPSrwyEyoMHxZfHzrTHcpsWDQVr8tLgdFYKT',
     contractAddress: 'EZfS8jZwbPSrwyEyoMHxZfHzrTHcpsWDQVr8tLgdFYKT',
     tokenId: 'EZfS8jZwbPSrwyEyoMHxZfHzrTHcpsWDQVr8tLgdFYKT',
@@ -36,10 +36,10 @@ export const myNFTs: NFTConfig[] = [
   },
   {
     id: '3',
-    name: 'Ethereum NFT #1175',
-    collection: 'Ethereum Collection',
-    description: 'A piece from the original NFT ecosystem.',
-    image: '/assets/ethereum-nft.png', // Add your real Ethereum NFT image here
+    name: 'Pythenians',
+    collection: 'Pythenians',
+    description: 'Network-native artifacts from the Pyth community.',
+    image: '/assets/ethereum-nft.png',
     marketplaceUrl: 'https://opensea.io/item/ethereum/0x8fe1a377b83921fe1429adb1b8fbfecd45de9cd8/1175',
     contractAddress: '0x8fe1a377b83921fe1429adb1b8fbfecd45de9cd8',
     tokenId: '1175',
