@@ -82,7 +82,7 @@ const Card: React.FC<{ item: WorkItem; index: number; isWriting?: boolean }> = (
         </span>
       )}
       <div className="flex justify-between items-start mb-3">
-        <h3 className="text-sm sm:text-base font-medium text-white group-hover:text-primary transition-colors pr-4">
+        <h3 className="text-sm sm:text-base font-medium text-white group-hover:text-primary transition-colors pr-4 whitespace-nowrap">
           {item.title}
         </h3>
         <ArrowUpRight 
