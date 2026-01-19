@@ -98,12 +98,12 @@ export const Signals: React.FC = () => {
           </span>
         </div>
         <p className="text-secondary font-light leading-relaxed">
-          A digital artifact I hold.<br/>
+          A small set of digital artifacts I hold.<br/>
           Collected for alignment, not speculation.
         </p>
       </motion.div>
       
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-8 md:gap-6 max-w-md mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6">
         {myNFTs.map((s, i) => (
           <SignalCard key={s.id} signal={s} index={i} />
         ))}
