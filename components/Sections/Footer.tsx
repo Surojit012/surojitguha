@@ -4,7 +4,7 @@ import { Link } from 'wouter';
 export const Footer: React.FC = () => {
   return (
     <footer id="connect" className="py-24 border-t border-white/5 bg-background relative z-10">
-      <div className="max-w-6xl mx-auto px-6 md:px-12 w-full">
+      <div className="px-6 md:px-12 w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 lg:gap-24">
           
           {/* Left Section - Name & Description */}
