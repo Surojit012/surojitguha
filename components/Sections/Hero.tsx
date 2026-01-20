@@ -23,7 +23,7 @@ export const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <p className="text-[9px] sm:text-[10px] md:text-xs font-mono text-secondary/60 uppercase tracking-[0.25em] flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-0 select-none">
+          <p className="text-[9px] sm:text-[10px] md:text-xs font-mono text-secondary/80 uppercase tracking-[0.25em] flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-0 select-none">
             <span>Web3 Infrastructure</span>
             <span className="hidden sm:inline-block mx-2 md:mx-4 opacity-40">•</span>
             <span>Interactive Systems</span>
@@ -39,9 +39,9 @@ export const Hero: React.FC = () => {
         transition={{ duration: 1, delay: 1.5 }}
         className="absolute bottom-8 sm:bottom-12 flex flex-col items-center gap-3 sm:gap-4 select-none pointer-events-none"
       >
-        <span className="text-[9px] sm:text-[10px] font-mono text-secondary/30 uppercase tracking-[0.3em]">Signal</span>
-        <ArrowDown size={12} className="sm:hidden text-secondary/30 animate-pulse" strokeWidth={1} />
-        <ArrowDown size={14} className="hidden sm:block text-secondary/30 animate-pulse" strokeWidth={1} />
+        <span className="text-[9px] sm:text-[10px] font-mono text-secondary/50 uppercase tracking-[0.3em]">Signal</span>
+        <ArrowDown size={12} className="sm:hidden text-secondary/50 animate-pulse" strokeWidth={1} />
+        <ArrowDown size={14} className="hidden sm:block text-secondary/50 animate-pulse" strokeWidth={1} />
       </motion.div>
     </section>
   );

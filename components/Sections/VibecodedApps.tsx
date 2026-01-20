@@ -14,7 +14,7 @@ const apps: VibecodedApp[] = [
   {
     id: '2',
     name: 'Ritual Critic',
-    description: 'An AI critique system that analyzes submissions, scores them, and produces contextual roasts — adding signal through interpretation, not authority.',
+    description: 'An AI critique system that analyzes submissions, scores them, and produces contextual roasts by adding signal through interpretation, not authority.',
     tags: ['AI analysis', 'Scoring', 'Cultural signal'],
     link: 'https://ritual-critic.vercel.app/'
   },
@@ -48,8 +48,8 @@ const AppCard: React.FC<{ app: VibecodedApp; index: number }> = ({ app, index })
             Vibecoded
           </span>
         </div>
-        <ArrowUpRight size={14} className="sm:hidden text-secondary/40 group-hover:text-white transition-colors duration-500 transform group-hover:-translate-y-1 group-hover:translate-x-1 shrink-0" />
-        <ArrowUpRight size={16} className="hidden sm:block text-secondary/40 group-hover:text-white transition-colors duration-500 transform group-hover:-translate-y-1 group-hover:translate-x-1 shrink-0" />
+        <ArrowUpRight size={14} className="sm:hidden text-secondary/60 group-hover:text-white transition-colors duration-500 transform group-hover:-translate-y-1 group-hover:translate-x-1 shrink-0" />
+        <ArrowUpRight size={16} className="hidden sm:block text-secondary/60 group-hover:text-white transition-colors duration-500 transform group-hover:-translate-y-1 group-hover:translate-x-1 shrink-0" />
       </div>
       
       <p className="text-secondary mb-6 sm:mb-8 font-light text-xs sm:text-sm leading-relaxed max-w-[95%]">
@@ -58,7 +58,7 @@ const AppCard: React.FC<{ app: VibecodedApp; index: number }> = ({ app, index })
 
       <div className="flex flex-wrap gap-2 sm:gap-3 mt-auto pt-3 sm:pt-4">
         {app.tags.map(tag => (
-          <span key={tag} className="text-[9px] sm:text-[10px] font-mono uppercase tracking-wider text-secondary/40 group-hover:text-secondary/60 transition-colors">
+          <span key={tag} className="text-[9px] sm:text-[10px] font-mono uppercase tracking-wider text-secondary/60 group-hover:text-secondary/80 transition-colors">
             {tag}
           </span>
         ))}
@@ -77,7 +77,7 @@ export const VibecodedApps: React.FC = () => {
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         className="mb-12 sm:mb-16 max-w-xl"
       >
-        <div className="flex items-center gap-3 mb-3 sm:mb-4 text-secondary/50">
+        <div className="flex items-center gap-3 mb-3 sm:mb-4 text-secondary/70">
            <Sparkles size={12} className="sm:hidden" />
            <Sparkles size={14} className="hidden sm:block" />
            <span className="text-[10px] sm:text-xs font-mono tracking-widest uppercase">

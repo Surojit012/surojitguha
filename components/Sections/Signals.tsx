@@ -37,7 +37,7 @@ const SignalCard: React.FC<{ signal: typeof myNFTs[0]; index: number }> = ({ sig
         <p className="text-[11px] sm:text-[12px] text-secondary/70 group-hover:text-secondary/80 transition-colors duration-500 leading-relaxed">
           {signal.description}
         </p>
-        <p className="text-[10px] sm:text-[11px] font-light text-secondary/50 group-hover:text-secondary/60 transition-colors duration-500 leading-relaxed italic mt-1.5 sm:mt-2">
+        <p className="text-[10px] sm:text-[11px] font-light text-secondary/70 group-hover:text-secondary/80 transition-colors duration-500 leading-relaxed italic mt-1.5 sm:mt-2">
           {signal.interpretation}
         </p>
       </div>
@@ -55,7 +55,7 @@ export const Signals: React.FC = () => {
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         className="mb-12 sm:mb-16 max-w-xl"
       >
-        <div className="flex items-center gap-3 mb-3 sm:mb-4 text-secondary/50">
+        <div className="flex items-center gap-3 mb-3 sm:mb-4 text-secondary/70">
           <Disc size={12} className="sm:hidden" />
           <Disc size={14} className="hidden sm:block" />
           <span className="text-[10px] sm:text-xs font-mono tracking-widest uppercase">

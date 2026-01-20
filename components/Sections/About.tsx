@@ -11,7 +11,7 @@ export const About: React.FC = () => {
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         className="max-w-2xl mb-40"
       >
-        <span className="block text-xs font-mono text-secondary/50 tracking-widest mb-6 uppercase">
+        <span className="block text-xs font-mono text-secondary/70 tracking-widest mb-6 uppercase">
           01 / About
         </span>
         
@@ -25,8 +25,7 @@ export const About: React.FC = () => {
             I use vibecoding and AI-assisted tools to collapse the distance between intent and a working system.
           </p>
           <p>
-            I’m interested in how people experience complex infrastructure —
-            crypto protocols, reputation layers, coordination systems, and AI-driven tools.
+            I’m interested in how people experience complex infrastructure like crypto protocols, reputation layers, coordination systems, and AI-driven tools.
           </p>
           <p>
             I believe the interface is the protocol.
@@ -46,7 +45,7 @@ export const About: React.FC = () => {
         transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         className="w-full flex flex-col items-center justify-center text-center space-y-8"
       >
-        <span className="text-[10px] font-mono text-secondary/30 uppercase tracking-[0.25em]">
+        <span className="text-[10px] font-mono text-secondary/50 uppercase tracking-[0.25em]">
           Method
         </span>
         

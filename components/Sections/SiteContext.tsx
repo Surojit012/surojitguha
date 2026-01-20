@@ -11,7 +11,7 @@ export const SiteContext: React.FC = () => {
         viewport={{ once: true }}
         className="max-w-2xl"
       >
-        <span className="block text-xs font-mono text-secondary/50 tracking-widest mb-6 uppercase">
+        <span className="block text-xs font-mono text-secondary/70 tracking-widest mb-6 uppercase">
           07 / Context
         </span>
         <h3 className="text-white font-medium mb-6">
@@ -20,7 +20,7 @@ export const SiteContext: React.FC = () => {
         <p className="text-secondary font-light leading-relaxed mb-6">
           A place to document experiments, show taste, connect ideas, and leave traces of work.
         </p>
-        <p className="text-sm font-mono text-secondary/50 italic">
+        <p className="text-sm font-mono text-secondary/70 italic">
           If something here feels unfinished — that’s intentional.
         </p>
       </motion.div>
@@ -57,7 +57,7 @@ export const SiteContext: React.FC = () => {
             how culture propagates onchain
           </li>
         </ul>
-        <p className="mt-8 text-xs font-mono text-secondary/40">
+        <p className="mt-8 text-xs font-mono text-secondary/60">
           These interests evolve. The questions stay.
         </p>
       </motion.div>

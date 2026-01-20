@@ -77,7 +77,7 @@ const Card: React.FC<{ item: WorkItem; index: number; isWriting?: boolean }> = (
         className="flex flex-col p-6 border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 h-full"
       >
         {item.type && (
-          <span className="mb-3 text-[10px] font-mono text-secondary/40 uppercase tracking-widest group-hover:text-secondary/60 transition-colors">
+          <span className="mb-3 text-[10px] font-mono text-secondary/60 uppercase tracking-widest group-hover:text-secondary/80 transition-colors">
             {item.type}
           </span>
         )}
@@ -87,7 +87,7 @@ const Card: React.FC<{ item: WorkItem; index: number; isWriting?: boolean }> = (
           </h3>
           <ArrowUpRight 
             size={14} 
-            className="text-secondary/30 group-hover:text-white transition-colors transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 shrink-0 ml-3" 
+            className="text-secondary/50 group-hover:text-white transition-colors transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 shrink-0 ml-3" 
           />
         </div>
         <p className="text-sm text-secondary font-light leading-relaxed mt-auto">

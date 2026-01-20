@@ -13,7 +13,7 @@ export const Context: React.FC = () => {
         <div className="mb-20">
           <Link 
             href="/"
-            className="font-mono text-xs tracking-widest text-secondary/50 hover:text-white transition-colors uppercase cursor-pointer inline-block"
+            className="font-mono text-xs tracking-widest text-secondary/70 hover:text-white transition-colors uppercase cursor-pointer inline-block"
           >
             ← Index
           </Link>
@@ -56,7 +56,7 @@ export const Context: React.FC = () => {
               And I think culture determines adoption long before tooling does.
             </p>
             <p>
-              My background isn’t academic and it isn’t corporate. I learned by being close to communities — moderating, participating, watching incentives play out in real time. That proximity teaches you things documentation never will. You see how reputation forms. How trust leaks. How coordination fails. How small design decisions compound into large outcomes.
+              My background isn’t academic and it isn’t corporate. I learned by being close to communities by moderating, participating, watching incentives play out in real time. That proximity teaches you things documentation never will. You see how reputation forms. How trust leaks. How coordination fails. How small design decisions compound into large outcomes.
             </p>
             <p>
               Over time, that shaped how I approach building.
@@ -72,10 +72,10 @@ export const Context: React.FC = () => {
               <strong className="text-white font-medium">Vibecoding</strong> is the method that lets me explore those questions honestly.
             </p>
             <p>
-              Not because it’s fast — though speed matters — but because it removes excuses. When the cost of turning an idea into an artifact drops, taste becomes the bottleneck. You can’t hide behind planning. You have to decide what matters.
+              Not because it’s fast (though speed matters) but because it removes excuses. When the cost of turning an idea into an artifact drops, taste becomes the bottleneck. You can’t hide behind planning. You have to decide what matters.
             </p>
             <p>
-              AI, for me, is leverage. It collapses the distance between intent and execution. It allows me to prototype interfaces, tools, and systems early — before ideas harden into ideology. Most of what I build starts as an experiment. Some of it breaks. Some of it earns refinement.
+              AI, for me, is leverage. It collapses the distance between intent and execution. It allows me to prototype interfaces, tools, and systems early before ideas harden into ideology. Most of what I build starts as an experiment. Some of it breaks. Some of it earns refinement.
             </p>
             <p>
               That filtering process is intentional.
@@ -99,7 +99,7 @@ export const Context: React.FC = () => {
               <li className="pl-4 border-l border-white/20 text-primary/90">interfaces that reduce cognitive load instead of adding features</li>
             </ul>
             <p>
-              A lot of my work sits around reputation, identity, and trust — not as abstractions, but as lived experiences. How does credibility form without follower counts? How does identity exist without exposure? How do we design systems that don’t require constant attention to function?
+              A lot of my work sits around reputation, identity, and trust, not as abstractions, but as lived experiences. How does credibility form without follower counts? How does identity exist without exposure? How do we design systems that don’t require constant attention to function?
             </p>
             <p>
               These questions don’t have clean answers. That’s why I keep returning to them.
@@ -114,7 +114,7 @@ export const Context: React.FC = () => {
               I write publicly because it forces clarity. It exposes weak thinking quickly. Some ideas remain text. Some demand interfaces. Vibecoding collapses the distance between the two. A thread becomes a prototype. A prototype becomes a reference. Sometimes that’s where it ends. Sometimes it opens a new path.
             </p>
             <p>
-              This site exists to index that exploration — not to summarize it.
+              This site exists to index that exploration, not to summarize it.
             </p>
 
             <div className="h-4" />
@@ -139,7 +139,7 @@ export const Context: React.FC = () => {
 
             <div className="h-8" />
 
-            <p className="text-sm font-mono text-secondary/60 uppercase tracking-widest mb-4">
+            <p className="text-sm font-mono text-secondary/80 uppercase tracking-widest mb-4">
               Context
             </p>
             <p>

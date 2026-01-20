@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           {/* Far Left - Name & Description */}
           <div className="flex-1 max-w-md space-y-3 sm:space-y-4">
             <h3 className="text-white font-medium text-sm sm:text-base">Surojit Guha</h3>
-            <p className="text-secondary/60 text-xs sm:text-sm font-light leading-relaxed">
+            <p className="text-secondary/80 text-xs sm:text-sm font-light leading-relaxed">
               Collaborating on thoughtful infrastructure and experimental tools.
             </p>
           </div>
@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-8 sm:gap-12 md:gap-16 lg:gap-24">
             {/* Navigate Section */}
             <div className="space-y-3 sm:space-y-4">
-              <h4 className="text-[10px] sm:text-xs font-mono text-secondary/40 tracking-widest uppercase">Navigate</h4>
+              <h4 className="text-[10px] sm:text-xs font-mono text-secondary/60 tracking-widest uppercase">Navigate</h4>
               <div className="space-y-1.5 sm:space-y-2">
                 <a href="#work" className="block text-xs sm:text-sm text-secondary/70 hover:text-white transition-colors">
                   Work
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
 
             {/* Connect Section */}
             <div className="space-y-3 sm:space-y-4">
-              <h4 className="text-[10px] sm:text-xs font-mono text-secondary/40 tracking-widest uppercase">Connect</h4>
+              <h4 className="text-[10px] sm:text-xs font-mono text-secondary/60 tracking-widest uppercase">Connect</h4>
               <div className="space-y-1.5 sm:space-y-2">
                 <a 
                   href="https://twitter.com/surojitpvt" 
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Section */}
         <div className="mt-16 sm:mt-20 pt-6 sm:pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
-          <div className="text-[10px] sm:text-xs text-secondary/40 font-mono">
+          <div className="text-[10px] sm:text-xs text-secondary/60 font-mono">
             Built with intention, not haste.
           </div>
           <div className="text-[9px] sm:text-[10px] font-mono text-white/10 uppercase tracking-[0.2em] select-none">

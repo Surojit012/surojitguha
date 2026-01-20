@@ -53,16 +53,16 @@ const WritingCard: React.FC<{ piece: WritingPiece; index: number }> = ({ piece, 
     >
       <div>
         <div className="flex justify-between items-start mb-4 sm:mb-6">
-          <span className="text-[9px] sm:text-[10px] font-mono uppercase tracking-widest text-secondary/60 border border-white/5 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-sm group-hover:border-white/20 transition-colors">
+          <span className="text-[9px] sm:text-[10px] font-mono uppercase tracking-widest text-secondary/70 border border-white/5 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-sm group-hover:border-white/20 transition-colors">
             {piece.category}
           </span>
           <ArrowUpRight 
             size={14} 
-            className="sm:hidden text-secondary/40 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500" 
+            className="sm:hidden text-secondary/60 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500" 
           />
           <ArrowUpRight 
             size={16} 
-            className="hidden sm:block text-secondary/40 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500" 
+            className="hidden sm:block text-secondary/60 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500" 
           />
         </div>
 
@@ -88,7 +88,7 @@ export const Writing: React.FC = () => {
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
       >
         <div className="mb-12 sm:mb-16 max-w-xl">
-          <div className="flex items-center gap-3 mb-3 sm:mb-4 text-secondary/50">
+          <div className="flex items-center gap-3 mb-3 sm:mb-4 text-secondary/70">
                <Feather size={12} className="sm:hidden" />
                <Feather size={14} className="hidden sm:block" />
                <span className="text-[10px] sm:text-xs font-mono tracking-widest uppercase">
@@ -119,7 +119,7 @@ export const Writing: React.FC = () => {
             href="https://twitter.com/surojitpvt" 
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-[10px] sm:text-xs font-mono text-secondary/50 hover:text-white transition-colors tracking-widest uppercase border-b border-transparent hover:border-white/20 pb-1"
+            className="inline-block text-[10px] sm:text-xs font-mono text-secondary/70 hover:text-white transition-colors tracking-widest uppercase border-b border-transparent hover:border-white/20 pb-1"
           >
             More writing on X →
           </a>
