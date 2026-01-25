@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { ThemeToggle } from './ThemeToggle';
 
 export const Navigation: React.FC = () => {
   const [isMac, setIsMac] = useState(false);
@@ -17,7 +18,7 @@ export const Navigation: React.FC = () => {
   };
 
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -29,9 +30,10 @@ export const Navigation: React.FC = () => {
           {isMac ? '⌘K' : 'CTRL+K'}
         </span>
       </div>
-      <div className="flex gap-4 sm:gap-6 md:gap-8 font-mono text-[10px] sm:text-xs tracking-widest pointer-events-auto">
+      <div className="flex items-center gap-4 sm:gap-6 md:gap-8 font-mono text-[10px] sm:text-xs tracking-widest pointer-events-auto">
         <a href="#work" onClick={scrollToSection('work')} className="text-white/80 hover:text-white transition-colors cursor-pointer">WORK</a>
         <a href="#connect" onClick={scrollToSection('connect')} className="text-white/80 hover:text-white transition-colors cursor-pointer">CONTACT</a>
+        <ThemeToggle />
       </div>
     </motion.nav>
   );
