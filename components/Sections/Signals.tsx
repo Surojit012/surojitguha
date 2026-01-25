@@ -48,7 +48,7 @@ const SignalCard: React.FC<{ signal: typeof myNFTs[0]; index: number }> = ({ sig
 export const Signals: React.FC = () => {
   return (
     <section id="signals" className="py-16 sm:py-20 md:py-24 border-t border-white/5 px-4 sm:px-6 md:px-0">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20, filter: 'blur(8px)' }}
         whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
         viewport={{ once: true, margin: "-10%" }}
@@ -59,15 +59,15 @@ export const Signals: React.FC = () => {
           <Disc size={12} className="sm:hidden" />
           <Disc size={14} className="hidden sm:block" />
           <span className="text-[10px] sm:text-xs font-mono tracking-widest uppercase">
-            04 / Signals Held
+            06 / Signals Held
           </span>
         </div>
         <p className="text-sm sm:text-base text-secondary font-light leading-relaxed">
-          A small set of digital artifacts I hold.<br/>
+          A small set of digital artifacts I hold.<br />
           Collected for alignment, not speculation.
         </p>
       </motion.div>
-      
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-6">
         {myNFTs.map((s, i) => (
           <SignalCard key={s.id} signal={s} index={i} />
