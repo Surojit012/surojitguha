@@ -85,7 +85,7 @@ export const Footer: React.FC = () => {
                   Email
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Surojit012"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-xs sm:text-sm text-secondary/70 hover:text-white transition-colors"
