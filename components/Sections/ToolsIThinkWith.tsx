@@ -54,15 +54,15 @@ const ClusterCard: React.FC<{ cluster: ToolCluster; index: number }> = ({ cluste
       <h3 className="text-base sm:text-lg font-medium text-white mb-3 sm:mb-4 leading-tight">
         {cluster.name}
       </h3>
-      
+
       <p className="text-secondary mb-6 sm:mb-8 font-light text-xs sm:text-sm leading-relaxed">
         {cluster.description}
       </p>
 
       <div className="flex flex-wrap gap-x-3 gap-y-2 mt-auto pt-3 sm:pt-4">
         {cluster.items.map((item, i) => (
-          <span 
-            key={item} 
+          <span
+            key={item}
             className="text-[9px] sm:text-[10px] font-mono text-secondary/60"
           >
             {item}{i < cluster.items.length - 1 && <span className="ml-3 text-secondary/30">·</span>}
@@ -76,7 +76,7 @@ const ClusterCard: React.FC<{ cluster: ToolCluster; index: number }> = ({ cluste
 export const ToolsIThinkWith: React.FC = () => {
   return (
     <section id="tools" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-0">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20, filter: 'blur(8px)' }}
         whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
         viewport={{ once: true, margin: "-10%" }}
@@ -90,11 +90,11 @@ export const ToolsIThinkWith: React.FC = () => {
             03 / Tools I Think With
           </span>
         </div>
-        <p className="text-sm sm:text-base text-secondary/60 font-light leading-relaxed">
+        <p className="text-sm sm:text-base text-secondary font-light leading-relaxed">
           Subsystems and tools I use to explore, build, and ship ideas quickly.
         </p>
       </motion.div>
-      
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
         {clusters.map((cluster, i) => (
           <ClusterCard key={cluster.id} cluster={cluster} index={i} />
