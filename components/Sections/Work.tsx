@@ -12,6 +12,12 @@ interface WorkItem {
 
 const apps: WorkItem[] = [
   {
+    id: 'nexora',
+    title: 'Nexora',
+    description: 'AI-powered growth systems for brand scaling and automated sales.',
+    link: 'https://nexora-seven-kappa.vercel.app/'
+  },
+  {
     id: 'reply-guy',
     title: 'Reply Guy',
     description: 'Lightweight tool for generating context-aware replies.',
