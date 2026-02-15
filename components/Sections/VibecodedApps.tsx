@@ -31,6 +31,27 @@ const apps: VibecodedApp[] = [
     description: 'A reputation and proof layer that evaluates onchain behavior to surface credible signal without relying on follower counts or hype.',
     tags: ['Onchain data', 'Reputation', 'Verification'],
     link: 'https://proofofbags.vercel.app/'
+  },
+  {
+    id: '5',
+    name: 'Tapri',
+    description: 'A contemporary digital teahouse experience blending traditional "kadak" chai culture with a community-driven platform for storytelling.',
+    tags: ['Chai', 'Storytelling', 'Community'],
+    link: 'https://tapri-theteahouse.vercel.app/'
+  },
+  {
+    id: '6',
+    name: 'Work3Hub',
+    description: 'A streamlined aggregator that simplifies the process of finding creative and technical bounties across various Web3 platforms.',
+    tags: ['Web3', 'Bounties', 'Freelance'],
+    link: 'https://work3hub.vercel.app/'
+  },
+  {
+    id: '7',
+    name: 'VibeIdeas',
+    description: 'A curated database offering over 100 innovative project concepts spanning Web2, Web3, AI tools, and Farcaster apps.',
+    tags: ['Project Ideas', 'Development', 'Innovation'],
+    link: 'https://vibeideas-blue.vercel.app/'
   }
 ];
 
