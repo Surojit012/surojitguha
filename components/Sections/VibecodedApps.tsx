@@ -52,6 +52,13 @@ const apps: VibecodedApp[] = [
     description: 'A curated database offering over 100 innovative project concepts spanning Web2, Web3, AI tools, and Farcaster apps.',
     tags: ['Project Ideas', 'Development', 'Innovation'],
     link: 'https://vibeideas-blue.vercel.app/'
+  },
+  {
+    id: '8',
+    name: 'BuidlMyResume AI',
+    description: 'A highly specialized AI assistant for resume optimization and career coaching.',
+    tags: ['AI Assistant', 'Resume', 'Career'],
+    link: 'https://buidlmyresumeai.vercel.app/'
   }
 ];
 

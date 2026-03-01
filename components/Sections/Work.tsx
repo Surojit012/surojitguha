@@ -34,6 +34,12 @@ const apps: WorkItem[] = [
     title: 'Proof of Bags',
     description: 'Reputation and behavior signal layer for token ecosystems.',
     link: 'https://proofofbags.vercel.app/'
+  },
+  {
+    id: 'buidlmyresume-ai',
+    title: 'BuidlMyResume AI',
+    description: 'A highly specialized AI assistant for resume optimization and career coaching.',
+    link: 'https://buidlmyresumeai.vercel.app/'
   }
 ];
 
@@ -91,9 +97,9 @@ const Card: React.FC<{ item: WorkItem; index: number; isWriting?: boolean }> = (
           <h3 className="app-title font-medium text-white group-hover:text-primary transition-colors">
             {item.title}
           </h3>
-          <ArrowUpRight 
-            size={14} 
-            className="text-secondary/50 group-hover:text-white transition-colors transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 shrink-0 ml-3" 
+          <ArrowUpRight
+            size={14}
+            className="text-secondary/50 group-hover:text-white transition-colors transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 shrink-0 ml-3"
           />
         </div>
         <p className="text-sm text-secondary font-light leading-relaxed mt-auto">
@@ -110,7 +116,7 @@ export const Work: React.FC = () => {
       {/* 04 / VIBECODED APPS */}
       <div className="px-4 sm:px-6 md:px-0">
         <div className="mb-6 sm:mb-8 max-w-2xl">
-           <span className="block text-[10px] sm:text-xs font-mono text-secondary tracking-widest mb-3 sm:mb-4 uppercase">
+          <span className="block text-[10px] sm:text-xs font-mono text-secondary tracking-widest mb-3 sm:mb-4 uppercase">
             04 / Vibecoded Apps
           </span>
           <p className="text-sm sm:text-base text-secondary font-light leading-relaxed">
@@ -127,7 +133,7 @@ export const Work: React.FC = () => {
       {/* 05 / SELECTED WRITING */}
       <div className="px-4 sm:px-6 md:px-0">
         <div className="mb-6 sm:mb-8 max-w-2xl">
-           <span className="block text-[10px] sm:text-xs font-mono text-secondary tracking-widest mb-3 sm:mb-4 uppercase">
+          <span className="block text-[10px] sm:text-xs font-mono text-secondary tracking-widest mb-3 sm:mb-4 uppercase">
             05 / Selected Writing
           </span>
           <p className="text-sm sm:text-base text-secondary font-light leading-relaxed">
