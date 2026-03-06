@@ -87,7 +87,7 @@ export const ToolsIThinkWith: React.FC = () => {
           <Layers size={12} className="sm:hidden" />
           <Layers size={14} className="hidden sm:block" />
           <span className="text-[10px] sm:text-xs font-mono tracking-widest uppercase">
-            03 / Tools I Think With
+            04 / Tools I Think With
           </span>
         </div>
         <p className="text-sm sm:text-base text-secondary font-light leading-relaxed">

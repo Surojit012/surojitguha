@@ -16,7 +16,7 @@ export const WhyVibecoding: React.FC = () => {
                     <Zap size={12} className="sm:hidden" />
                     <Zap size={14} className="hidden sm:block" />
                     <span className="text-[10px] sm:text-xs font-mono tracking-widest uppercase">
-                        04 / Why Vibecoding
+                        05 / Why Vibecoding
                     </span>
                 </div>
 

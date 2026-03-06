@@ -12,7 +12,7 @@ export const Conclusion: React.FC = () => {
         className="max-w-2xl"
       >
         <span className="block text-xs font-mono text-secondary tracking-widest mb-6 uppercase">
-          05 / Context
+          07 / Context
         </span>
         <p className="text-lg md:text-xl font-light leading-relaxed text-secondary">
           Some ideas remain text. Some demand interfaces.<br/>

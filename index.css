@@ -19,9 +19,149 @@ section[id] {
   min-width: 0;
 }
 
-/* Responsive improvements */
+/* ============================================
+   ANIMATED GRADIENT TEXT
+   ============================================ */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #a78bfa 25%,
+    #60a5fa 50%,
+    #34d399 75%,
+    #ffffff 100%
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* ============================================
+   GLASSMORPHISM
+   ============================================ */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 0 30px rgba(167, 139, 250, 0.08),
+    0 0 60px rgba(96, 165, 250, 0.04);
+}
+
+/* ============================================
+   FLOATING ANIMATION
+   ============================================ */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delay-1 {
+  animation: float 6s ease-in-out 1.5s infinite;
+}
+
+.animate-float-delay-2 {
+  animation: float 6s ease-in-out 3s infinite;
+}
+
+.animate-float-delay-3 {
+  animation: float 6s ease-in-out 4.5s infinite;
+}
+
+/* ============================================
+   GLOW EFFECT
+   ============================================ */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(167, 139, 250, 0.0); }
+  50% { box-shadow: 0 0 30px rgba(167, 139, 250, 0.1), 0 0 60px rgba(96, 165, 250, 0.05); }
+}
+
+.hover-glow:hover {
+  box-shadow:
+    0 0 20px rgba(167, 139, 250, 0.1),
+    0 0 40px rgba(96, 165, 250, 0.06),
+    inset 0 0 20px rgba(255, 255, 255, 0.02);
+}
+
+/* ============================================
+   NOISE TEXTURE
+   ============================================ */
+.noise-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ============================================
+   CTA BUTTON STYLES
+   ============================================ */
+.btn-primary {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.15), rgba(96, 165, 250, 0.15));
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.25), rgba(96, 165, 250, 0.25));
+  border-color: rgba(167, 139, 250, 0.5);
+  box-shadow: 0 0 30px rgba(167, 139, 250, 0.15);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+/* ============================================
+   STAGGER REVEAL ANIMATION
+   ============================================ */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* ============================================
+   RESPONSIVE IMPROVEMENTS
+   ============================================ */
 @media (max-width: 640px) {
-  /* Ensure touch targets are large enough on mobile */
   a, button {
     min-height: 44px;
     min-width: 44px;
@@ -29,14 +169,12 @@ section[id] {
     align-items: center;
     justify-content: center;
   }
-  
-  /* Improve text readability on small screens */
+
   body {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }
-  
-  /* Prevent horizontal scroll on mobile */
+
   body, html {
     overflow-x: hidden;
   }
