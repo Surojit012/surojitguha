@@ -52,6 +52,13 @@ const projects: LabProject[] = [
     description: 'A futuristic AI-native web interface exploring modern design systems, animated UI components, and immersive web experiences for next-generation applications.',
     tech: ['Next.js', 'React', 'Modern UI', 'Experimental Design'],
     link: 'https://nexora-seven-kappa.vercel.app/'
+  },
+  {
+    id: '7',
+    name: 'Nora Web',
+    description: 'A sleek web presence focused on clean visuals, modern layout, and a crisp brand-forward experience.',
+    tech: ['Next.js', 'React', 'UI Design', 'Vercel'],
+    link: 'https://nora-web-one.vercel.app/'
   }
 ];
 
