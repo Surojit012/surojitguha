@@ -59,6 +59,13 @@ const projects: LabProject[] = [
     description: 'A sleek web presence focused on clean visuals, modern layout, and a crisp brand-forward experience.',
     tech: ['Next.js', 'React', 'UI Design', 'Vercel'],
     link: 'https://nora-web-one.vercel.app/'
+  },
+  {
+    id: '8',
+    name: 'CMO Five',
+    description: 'A focused project site designed around clear positioning, strong messaging, and conversion-friendly web storytelling.',
+    tech: ['Next.js', 'React', 'Brand Website', 'Vercel'],
+    link: 'https://cmo-five.vercel.app/'
   }
 ];
 
